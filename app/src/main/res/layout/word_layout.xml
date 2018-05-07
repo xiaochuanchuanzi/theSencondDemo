@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <test.com.myapplication.scrollview.LeftAndTop
+        android:id="@+id/left_and_top"
+        android:layout_width="30dp"
+        android:layout_height="120dp" />
+
+    <test.com.myapplication.scrollview.LeftScrollView
+        android:id="@+id/left"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top" />
+
+    <test.com.myapplication.scrollview.TopScrollView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_toRightOf="@+id/left" />
+
+    <test.com.myapplication.scrollview.BodyScrollView
+        android:id="@+id/body"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:layout_toRightOf="@+id/left" />
+    <test.com.myapplication.selfwordview.SelfGroup
+        android:id="@+id/body_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:layout_toRightOf="@+id/left" />
+
+    <test.com.myapplication.scrollview.MapsCature
+        android:id="@+id/fature_map"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="150dp"
+        android:layout_height="100dp" />
+</RelativeLayout><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/left_top_text"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="左上方" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/left_list"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/left_top_text"
+        android:background="@color/gray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/top_list"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/left_top_text"
+        android:background="@color/bg_orange" />
+
+
+
+    <test.com.library.SeatTable
+        android:id="@+id/seatView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_list"
+        android:layout_toRightOf="@+id/left_list"
+        android:background="@color/btn_blue_press"/>
+
+    <test.com.myapplication.newestversion.BodyScrollView
+        android:id="@+id/body"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_list"
+        android:layout_toRightOf="@+id/left_list"
+        android:background="@color/btn_blue_press" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/body_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_list"
+        android:layout_toRightOf="@+id/left_list"
+        android:background="@color/btn_blue_press"
+        android:visibility="gone" />
+</RelativeLayout>-->
